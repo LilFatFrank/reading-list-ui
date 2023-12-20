@@ -15,7 +15,7 @@ interface ListItem {
   category: string;
   createdAt?: string;
   upVotes?: number;
-  id: string;
+  _id: string;
 }
 
 export default function Home() {
@@ -206,7 +206,7 @@ export default function Home() {
           {list.map((item) => (
             <div
               className="flex items-start justify-between w-full shadow-elevation-medium p-4 rounded-[20px]"
-              key={item.id}
+              key={item._id}
             >
               <div className="w-[90%] flex items-start justify-start gap-[16px]">
                 <img
@@ -263,7 +263,7 @@ export default function Home() {
               <div className="w-[10%] h-full justify-end">
                 <HeartButton
                   initialLikes={item.upVotes as number}
-                  id={item.id}
+                  id={item._id}
                 />
               </div>
             </div>
