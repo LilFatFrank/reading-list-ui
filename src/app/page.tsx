@@ -133,7 +133,7 @@ export default function Home() {
   return (
     <main className="w-full min-h-screen">
       <>
-        <div className="fixed top-0 w-full p-4 ">
+        <div className="fixed top-0 w-full p-4 backdrop-blur-2xl">
           <div className="w-[1280px] m-auto flex items-center justify-between">
             <input
               className="border w-[500px] border-black-15 hover:border-black-25 focus:border-black-40 focus:shadow-black-10-inset-input focus:outline-none disabled:border-black-8 disabled:bg-black-2 disabled:cursor-not-allowed disabled:placeholder-black-40 rounded-[13px] px-[11px] p-[7.75px] text-black-80 placeholder-black-40 font-normal text-base transition-all"
