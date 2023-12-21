@@ -203,10 +203,11 @@ export default function Home() {
         </div>
         {/* list is in this div below */}
         <div className="w-[1280px] min-h-screen m-auto py-[100px] flex flex-col items-start justify-start gap-[16px]">
-          {list.map((item) => (
+          {list.map((item, index) => (
             <div
               className="flex items-start justify-between w-full shadow-elevation-medium p-4 rounded-[20px]"
               key={item._id}
+              ref={index === list.length - 1 ? lastResourceElementRef : null}
             >
               <div className="w-[90%] flex items-start justify-start gap-[16px]">
                 <img
